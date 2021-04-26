@@ -1,0 +1,33 @@
+.clients {
+  --grid-item: 6;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--clients-link-color);
+  border-radius: 4px;
+
+  transition: border var(--timing-function);
+
+  &:focus .clients__icon,
+  &:hover .clients__icon {
+    fill: var(--accent-color);
+  }
+
+  &:focus,
+  &:hover {
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.clients__icon {
+  width: 90px;
+  height: 45px;
+  fill: var(--clients-link-color);
+
+  transition: fill var(--timing-function);
+}
